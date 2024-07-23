@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #6b4f4f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #8c7b75;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-grow: 1;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffa500;
+        }
+
+        .search-bar {
+            position: relative;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            width: 200px;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .search-bar input[type="text"]:focus {
+            width: 300px;
+        }
+
+        .search-bar .results-list {
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            background-color: white;
+            display: none;
+            flex-direction: column;
+            box-shadow: 0px 0px 8px #ddd;
+            border-radius: 10px;
+            margin-top: 1rem;
+            max-height: 300px;
+            overflow-y: scroll;
+            z-index: 10;
+        }
+
+        .search-bar .results-list li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+
+        .search-bar .results-list li:hover {
+            background-color: #f5f5f5;
+        }
+
+      
+        .container {
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #6b4f4f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .effect{
+            color:#ffa500;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            position: relative;
+            padding: 10px 50px 10px 20px;
+            transition: all 0.3s;
+            transform: scale(3);
+        }
+
+        .effect .bg{
+            background: #ffa500;
+            width:30px;
+            height:2px;
+            position: absolute;
+            right: 0;
+            top:50%;
+            margin-top: -1px;
+            z-index: -1;
+            transition: all 0.3s;
+        }
+
+            .effect:hover{
+                padding-right: 20px;
+                color: #fff;
+            }
+        
+            .effect:hover .bg{
+                height: 100%;
+                width: 100%;
+                transform: translate(0,-50%);
+            }
+
+            .effect .bg::before,
+            .effect .bg:after{
+                content: '';
+                height: 2px;
+                width: 10px;
+                position:absolute;
+                background: #ffa500;
+                transition: all 0.3s;
+                right: -2px;
+            }
+
+            .effect .bg::before{
+                bottom: 3px;
+                transform: rotate(45deg);
+            }
+
+            .effect .bg::after{
+                top: 3px;
+                transform: rotate(-45deg);
+            }
+
+            .effect:hover .bg:before,
+            .effect:hover .bg:after {
+                right: 0;
+            }
+
+            .effect:hover .bg:before{
+                bottom: 7px;
+            }
+
+            .effect:hover .bg:after{
+                bottom: 7px;
+            }
+    </style>
+   </body>
+</head>
+<body>
+    <header>
+        <h1>Knowledge</h1>
+        <p>แหล่งความรู้สำหรับผู้ที่สนใจใน Matrix</p>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="a1.html">บทความทั้งหมดที่เกี่ยวกับ Matrix</a></li>
+            <li><a href="#">บทความล่าสุด</a></li>
+            <li><a href="#">หัวข้อยอดนิยม</a></li>
+            <li><a href="#">ค้นหาTags</a></li>
+            <li><a href="#">การประยุกต์ใช้เมทริกซ์กับคอมพิวเตอร์ในการคำนวณ</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="ค้นหา...">
+            <ul class="results-list"></ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>บทความล่าสุด</h2>
+            <p><u>ใครเป็นผู้คิดค้นเมทริกซ์</u></p>
+            <p><b>"จากคณิตศาสตร์สู่วิศวกรรม: การค้นพบเมทริกซ์และผู้บุกเบิก"</b></p>
+            <p>ใครคือผู้คิดค้นเมทริกซ์? ค้นพบต้นกำเนิดของศาสตร์คณิตศาสตร์ที่ปฏิวัติวงการและเปลี่ยนแปลงการคำนวณสมัยใหม่ พร้อมเรียนรู้เรื่องราวของนักคณิตศาสตร์ผู้บุกเบิกที่นำพาเราไปสู่โลกของเมทริกซ์และบทบาทสำคัญที่พวกเขามีในวงการวิทยาศาสตร์ คณิตศาสตร์และเทคโนโลยีในปัจจุบัน</p>
+          <a href="บทความล่าสุด.html" class="effect">Read more
+            <span class="bg"></span>
+          </a>
+        
+        </div>
+        </div>
+          
+        <div class="content">
+            <h2>หัวข้อยอดนิยม</h2>
+            <p><u>เราเรียนเมทริกซ์ไปทำไม?</u></p>
+            <p><b>"ค้นพบเหตุผลที่ทำให้เมทริกซ์เป็นเครื่องมือสำคัญในคณิตศาสตร์และวิทยาศาสตร์ พร้อมทั้งการประยุกต์ใช้ในชีวิตประจำวันและอาชีพต่างๆ ที่คุณอาจไม่เคยคาดคิด"</b></p>
+            <p>ความสำคัญและการประยุกต์ใช้เมทริกซ์ในชีวิตประจำวัน ทั้งในด้านวิทยาศาสตร์ เทคโนโลยี การเงิน และการวิเคราะห์ข้อมูล เรียนรู้วิธีการที่เมทริกซ์ช่วยให้โลกเราทำงานได้อย่างมีประสิทธิภาพยิ่งขึ้น</p>
+            <a href="หัวข้อยอดนิยม.html" class="effect">Read more
+                <span class="bg"></span>
+              </a>
+        </div>
+        <div class="content">
+            <h2>คำถามที่พบบ่อย</h2>
+            <p><u>ถ้าโลกของเราไม่มีเมทริกซ์...</u></p>
+            <p><b>"จะเกิดอะไรขึ้น? ถ้าโลกของเราไม่มีเมทริกซ์"</b></p>
+            <p>สำรวจผลกระทบที่จะมีต่อคณิตศาสตร์ วิทยาศาสตร์ เทคโนโลยี และชีวิตประจำวันของเรา หากปราศจากเครื่องมือคณิตศาสตร์ที่สำคัญนี้ โลกจะเปลี่ยนแปลงไปอย่างไร?</p>
+            <a href="คำถามที่พบบ่อย.html" class="effect">Read more
+                <span class="bg"></span>
+              </a>
+              <p></p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Metrixco. All Rights Reserved.
+    </footer>
+
+    <script>
+        document.querySelector('.search-bar input[type="text"]').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const results = document.querySelector('.results-list');
+            results.innerHTML = '';
+
+            if (query.length > 0) {
+                results.style.display = 'block';
+                const searchItems = [
+                    { name: 'ความรู้เกี่ยวกับเมทริกซ์', link: 'a1.html' },
+                    { name: 'การดำเนินการของเมทริกซ์', link: 'a1.html' },
+                    { name: 'การบวกเมทริกซ์', link: 'a1.html' },
+                    { name: 'การลบเมทริกซ์', link: 'a1.html' },
+                    { name: 'การคูณเมทริกซ์', link: 'a1.html' },
+                    { name: 'การคูณเมทริกซ์จำนวนจริง', link: 'a1.html' },
+                    { name: 'เมทริกซ์สับเปลี่ยน', link: 'a1.html' },
+                    { name: 'ดีเทอร์มิแนนต์ของเมทริกซ์', link: 'a1.html' },
+                    { name: 'เมทริกซ์ผกผัน', link: 'a1.html' },
+                    { name: 'ระบบสมการเชิงเส้น', link: 'a1.html' }
+                ];
+                const filteredItems = searchItems.filter(item => item.name.toLowerCase().includes(query));
+                filteredItems.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = item.name;
+                    li.dataset.link = item.link;
+                    results.appendChild(li);
+                });
+            } else {
+                results.style.display = 'none';
+            }
+        });
+
+        document.querySelector('.results-list').addEventListener('click', function(event) {
+            if (event.target.tagName === 'LI') {
+                const link = event.target.dataset.link;
+                window.location.href = link;
+            }
+        });
+    </script>
+</body>
+</html>

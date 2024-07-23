@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Matrix</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #3e2723;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .main-content {
+            width: 55%;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 45%;
+            background-color: #d7ccc8;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        iframe {
+            width: 100%;
+            height: 1024px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Example Matrix</h1>
+</header>
+<img src="c:\Users\User\Downloads\q1.jpg" alt="Matrix Explanation">
+
+<div class="container">
+    <div class="main-content">
+        <iframe frameborder="0" src="https://onecompiler.com/embed/c/42e29hnec?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true"></iframe>
+    </div>
+    <div class="sidebar">
+        <h2>คำอธิบายภาษา C</h2>
+        <p>ที่ใช้สร้างฟังก์ชันสำหรับบวกเมทริกซ์ 2x2 และทดสอบเวลาที่ใช้ในการทำงานของฟังก์ชันดังกล่าว</p>
+        <p>โค้ดประกอบด้วยฟังก์ชัน addMatrices ที่ใช้สำหรับการบวกเมทริกซ์ และ main ซึ่งเป็นฟังก์ชันหลักที่ใช้เรียกใช้ addMatrices และวัดเวลาที่ใช้ในการทำงานของฟังก์ชันนี้ด้วยฟังก์ชัน clock() ในไลบรารี time.h โดยมีรายละเอียดดังนี้:</p>
+        <ul>
+            <li>ฟังก์ชัน addMatrices:
+                <ul>
+                    <li>รับพารามิเตอร์เข้ามา 3 ตัวคือ A, B, และ result ทั้งหมดเป็นเมทริกซ์ 2x2 ของจำนวนเต็ม.</li>
+                    <li>วนลูปสองรอบเพื่อบวกเมทริกซ์ A และ B โดยใส่ผลลัพธ์ลงในเมทริกซ์ result.</li>
+                </ul>
+            </li>
+            <li>ฟังก์ชัน main:
+                <ul>
+                    <li>สร้างตัวแปร A, B และ result เป็นเมทริกซ์ 2x2 ของจำนวนเต็มและกำหนดค่าเริ่มต้นให้กับ A และ B.</li>
+                    <li>วัดเวลาที่ใช้ในการทำงานของฟังก์ชัน addMatrices โดยใช้ฟังก์ชัน clock() เพื่อคำนวณเวลาเริ่มต้นและสิ้นสุดของการทำงาน.</li>
+                    <li>พิมพ์ผลลัพธ์ของเมทริกซ์ result.</li>
+                    <li>พิมพ์เวลาที่ใช้ในการทำงานของฟังก์ชัน addMatrices.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>โดยทั่วไปแล้วโปรแกรมนี้มีจุดประสงค์ในการสอนการใช้งานฟังก์ชันในภาษา C และวิธีการวัดเวลาที่ใช้ในการประมวลผลโดยใช้ฟังก์ชัน clock()</p>
+    </div>
+    
+</div>
+
+<div class="container">
+    <div class="main-content">
+        <iframe frameborder="0" src="https://onecompiler.com/embed/cpp/42e29r8y8?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true"></iframe>
+    </div>
+    <div class="sidebar">
+        <h2>คำอธิบายภาษา C++</h2>
+        <p>ที่ใช้สร้างฟังก์ชันสำหรับบวกเมทริกซ์ 2x2 และทดสอบเวลาที่ใช้ในการทำงานของฟังก์ชันดังกล่าว 
+            โค้ดประกอบด้วยฟังก์ชัน addMatrices ที่ใช้สำหรับการบวกเมทริกซ์ และ main ซึ่งเป็นฟังก์ชันหลักที่ใช้เรียกใช้ addMatrices 
+            และวัดเวลาที่ใช้ในการทำงานของฟังก์ชันนี้ด้วยฟังก์ชัน clock() ในไลบรารี ctime โดยมีรายละเอียดดังนี้:</p>
+        <p>ฟังก์ชัน addMatrices:
+            รับพารามิเตอร์เข้ามา 3 ตัวคือ A, B, และ result ทั้งหมดเป็นเมทริกซ์ 2x2 ของจำนวนเต็ม.
+            วนลูปสองรอบเพื่อบวกเมทริกซ์ A และ B โดยใส่ผลลัพธ์ลงในเมทริกซ์ result.
+        ฟังก์ชัน main:
+            สร้างตัวแปร A, B และ result เป็นเมทริกซ์ 2x2 ของจำนวนเต็มและกำหนดค่าเริ่มต้นให้กับ A และ B.
+            วัดเวลาที่ใช้ในการทำงานของฟังก์ชัน addMatrices โดยใช้ฟังก์ชัน clock() เพื่อคำนวณเวลาเริ่มต้นและสิ้นสุดของการทำงาน.
+            พิมพ์ผลลัพธ์ของเมทริกซ์ result.
+            กำหนดรูปแบบการแสดงผลด้วย cout โดยใช้ fixed และ setprecision เพื่อแสดงตัวเลขทศนิยม 6 ตำแหน่ง.
+            พิมพ์เวลาที่ใช้ในการทำงานของฟังก์ชัน addMatrices.</p>
+    </div>
+</div>
+
+<div class="container">
+   <div class="main-content">
+    <iframe frameborder="0" src="https://onecompiler.com/embed/csharp/42e29udnh?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true"></iframe>
+   </div>
+   <div class="sidebar">
+    <h2>คำอธิบายภาษา C#</h2>
+    <p>ที่ใช้สร้างฟังก์ชันสำหรับบวกเมทริกซ์ 2x2 และทดสอบเวลาที่ใช้ในการทำงานของฟังก์ชันดังกล่าว 
+        โค้ดประกอบด้วยฟังก์ชัน AddMatrices ที่ใช้สำหรับการบวกเมทริกซ์ และ Main ซึ่งเป็นฟังก์ชันหลักที่ใช้เรียกใช้ AddMatrices 
+        และวัดเวลาที่ใช้ในการทำงานของฟังก์ชันนี้ด้วยคลาส Stopwatch ในไลบรารี System.Diagnostics โดยมีรายละเอียดดังนี้:</p>
+        <p>ฟังก์ชัน AddMatrices:
+            รับพารามิเตอร์เข้ามา 3 ตัวคือ A, B, และ result ทั้งหมดเป็นเมทริกซ์ 2x2 ของจำนวนเต็ม.
+            วนลูปสองรอบเพื่อบวกเมทริกซ์ A และ B โดยใส่ผลลัพธ์ลงในเมทริกซ์ result.
+        ฟังก์ชัน Main:
+            สร้างตัวแปร A, B และ result เป็นเมทริกซ์ 2x2 ของจำนวนเต็มและกำหนดค่าเริ่มต้นให้กับ A และ B.
+            สร้างตัวแปร stopwatch เพื่อวัดเวลาที่ใช้ในการทำงานของฟังก์ชัน AddMatrices.
+            เริ่มต้นตรวจวัดเวลาด้วย Stopwatch.Start() ก่อนที่จะเรียกใช้ AddMatrices และสิ้นสุดการตรวจวัดเวลาด้วย Stopwatch.Stop() หลังจากที่เสร็จสิ้นการทำงาน.
+            พิมพ์ผลลัพธ์ของเมทริกซ์ result ที่ได้จากการบวก.
+            พิมพ์เวลาที่ใช้ในการทำงานของฟังก์ชัน AddMatrices โดยใช้ stopwatch.Elapsed.TotalSeconds.</p>
+   </div>
+</div>  
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Subtraction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #3e2723;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .main-content {
+            width: 55%;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 45%;
+            background-color: #d7ccc8;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        iframe {
+            width: 100%;
+            height: 1024px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    
+    </nav>
+    <h1></h1>
+</header>
+<img src="c:\Users\User\Downloads\q2.jpg" alt="Matrix Explanation">
+
+
+<div class="container">
+    <div class="main-content">
+        <iframe frameborder="0" src="https://onecompiler.com/embed/c/42e2c4tgx?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true"></iframe>
+    </div>
+    <div class="sidebar">
+        <h2>คำอธิบายภาษา C</h2>
+        <p>1. โค้ดเริ่มต้นด้วยการประกาศเมทริกซ์ A และ B เป็นอาร์เรย์ 2 มิติ โดยกำหนดขนาดและค่าต่างๆ ไว้ นอกจากนี้ยังประกาศเมทริกซ์ C ขนาด 2x3 เพื่อเก็บผลลัพธ์ของการลบเมทริกซ์</p>
+        <p>2. ใช้คำสั่ง <code>clock_t start = clock();</code> เพื่อจับเวลาเริ่มต้นก่อนการคำนวณ</p>
+        <p>3. ลบเมทริกซ์ A และ B โดยใช้วนลูปสองชั้น ดังนี้:
+            <ul>
+                <li>วนลูปแรก (i) เพื่อวนลูปแถวของเมทริกซ์ A</li>
+                <li>วนลูปที่สอง (j) เพื่อวนลูปคอลัมน์ของเมทริกซ์ A</li>
+                <li>ในแต่ละรอบของวนลูป จะนำค่าในแถว i คอลัมน์ j ของเมทริกซ์ A ลบกับค่าในแถวและคอลัมน์เดียวกันของเมทริกซ์ B แล้วเก็บผลลัพธ์ไว้ในเมทริกซ์ C</li>
+            </ul>
+        </p>
+        <p>4. หลังจากคำนวณเสร็จ ใช้คำสั่ง <code>clock_t end = clock();</code> เพื่อจับเวลาสิ้นสุด แล้วคำนวณระยะเวลาที่ใช้ไป</p>
+        <p>5. แสดงผลลัพธ์เมทริกซ์ C ออกทางหน้าจอ</p>
+        <p>6. แสดงระยะเวลาที่ใช้ในการคำนวณในหน่วยวินาที โดยใช้ทศนิยม 6 ตำแหน่ง</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="main-content">
+        <iframe frameborder="0" src="https://onecompiler.com/embed/c/42e2c4tgx?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true"></iframe>
+    </div>
+    <div class="sidebar">
+        <h2>คำอธิบายภาษา  C++</h2>
+        <p>1. นำเข้าไลบรารี่ iostream สำหรับรับและแสดงผลข้อมูล, chrono สำหรับจับเวลา และ iomanip สำหรับปรับรูปแบบการแสดงผล
+         <p>2.  ประกาศเมทริกซ์ A และ B เป็นอาร์เรย์ 2 มิติ โดยกำหนดขนาดและค่าต่างๆ ไว้ นอกจากนี้ยังสร้างเมทริกซ์ C ขนาด 2x3 เพื่อเก็บผลลัพธ์</p>
+           <p> 3. ใช้คำสั่ง auto start = chrono::steady_clock::now(); เพื่อจับเวลาเริ่มต้น</p>
+            <p>4. ลบเมทริกซ์ A และ B โดยใช้วนลูปสองชั้นคล้ายกับภาษา C ดังนี้:</p>
+            <ul>
+               <li>วนลูปแรก (i) เพื่อวนลูปแถวของเมทริกซ์ A</li>
+                <li>วนลูปที่สอง (j) เพื่อวนลูปคอลัมน์ของเมทริกซ์ A</li>
+                <li>ในแต่ละรอบของวนลูป จะนำค่าในแถว i คอลัมน์ j ของเมทริกซ์ A ลบกับค่าในแถวและคอลัมน์เดียวกันของเมทริกซ์ B แล้วเก็บผลลัพธ์ไว้ในเมทริกซ์ C</li>
+            </ul>
+        </p>
+         <p> 5. หลังคำนวณเสร็จ ใช้คำสั่ง auto end = chrono::steady_clock::now(); เพื่อจับเวลาสิ้นสุด แล้วคำนวณระยะเวลาที่ใช้ไป</p>
+         <p> 6. แสดงผลลัพธ์เมทริกซ์ C ออกทางหน้าจอ </p>
+         <p> 7. แสดงระยะเวลาที่ใช้ในการคำนวณในหน่วยวินาที โดยใช้ทศนิยม 9 ตำแหน่ง</p>
+    </div>       
+    </div>
+</div>
+
+<div class="container">
+    <div class="main-content">
+        <iframe frameborder="0" src="https://onecompiler.com/embed/csharp/42e2c9hax?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true"></iframe>
+    </div>
+    <div class="sidebar">
+        <h2>คำอธิบาย C#</h2>
+        <p>1.นำเข้าไลบรารี่ System และ System.Diagnostics </p>
+        <p>2.ประกาศเมทริกซ์ A และ B เป็นอาร์เรย์ 2 มิติ โดยกำหนดขนาดและค่าต่างๆ ไว้ นอกจากนี้ยังสร้างอาร์เรย์ 2 มิติ C ขนาด 2x3 เพื่อเก็บผลลัพธ์ </p>
+      <p>  3.สร้างวัตถุ Stopwatch และเริ่มจับเวลาด้วยคำสั่ง Stopwatch.StartNew(); </p>
+          <p> 4.ลบเมทริกซ์ A และ B โดยใช้วนลูปสองชั้นคล้ายกับภาษาอื่นๆ ดังนี้: </p>
+          <ul>
+            <li> วนลูปแรก (i) เพื่อวนลูปแถวของเมทริกซ์ A </li>
+            <li> วนลูปที่สอง (j) เพื่อวนลูปคอลัมน์ของเมทริกซ์ A </li>
+            <li> ในแต่ละรอบของวนลูป จะนำค่าในแถว i คอลัมน์ j ของเมทริกซ์ A ลบกับค่าในแถวและคอลัมน์เดียวกันของเมทริกซ์ B แล้วเก็บผลลัพธ์ไว้ในเมทริกซ์ C </li>
+          </ul>
+          
+         <p> 5.หยุดจับเวลาด้วยคำสั่ง sw.Stop();, </p>
+         <p> 6.แสดงผลลัพธ์เมทริกซ์ C ออกทางหน้าจอ </p>
+        <p>  7.แสดงเวลาที่ใช้ในการคำนวณในหน่วยวินาที โดยใช้ทศนิยม 7 ตำแหน่ง โดยใช้รูปแบบ {0:0.0000000}</p>
+    </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Matrixgo</p>
+</footer>
+
+</body>
+</html>

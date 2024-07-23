@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Practice</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #3e2723;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .main-content {
+            width: 75%;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #d7ccc8;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        iframe {
+            width: 100%;
+            height: 1024px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Practice try it by yourself!</h1>
+</header>
+
+<div class="container">
+    <div class="main-content">
+        <iframe frameborder="0" src="https://onecompiler.com/embed/c/?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true"></iframe>
+    </div>
+    <div class="sidebar">
+        <h2>คำสั่งเบื้องต้นในการใช้ภาษา C ในการดำเนินการทางคณิตศาสตร์พื้นฐาน</h2>
+        <p>#include &lt;stdio.h&gt;</p>
+        <pre></pre>
+    
+        <pre>
+int main() {
+    int a = 10;
+    int b = 5;
+
+    int sum = a + b;        // การบวก
+    int difference = a - b; // การลบ
+    int product = a * b;    // การคูณ
+    int quotient = a / b;   // การหาร
+    int remainder = a % b;  // การหารเอาเศษ
+
+    printf("ผลรวม: %d\n", sum);
+    printf("ผลต่าง: %d\n", difference);
+    printf("ผลคูณ: %d\n", product);
+    printf("ผลหาร: %d\n", quotient);
+    printf("เศษจากการหาร: %d\n", remainder);
+
+    return 0;
+}
+        </pre>
+
+        <h2>คำสั่งเบื้องต้นในการใช้ภาษา C </h2>
+        <u>การประกาศตัวแปร</u>
+        <pre>int a;          // ประกาศตัวแปรชนิด integer
+            float b;        // ประกาศตัวแปรชนิด float
+            char c;         // ประกาศตัวแปรชนิด character</pre>
+
+     <u>  การกำหนดค่าตัวแปร</u>
+        <pre>a = 10;         // กำหนดค่า 10 ให้ตัวแปร a
+            b = 3.14;       // กำหนดค่า 3.14 ให้ตัวแปร b
+            c = 'A';        // กำหนดค่า 'A' ให้ตัวแปร c</pre>
+
+            <u>การใช้เงื่อนไข (if-else)</u>
+            <pre>if (a > 5) {
+                // ถ้า a มากกว่า 5
+                printf("a มากกว่า 5\n");
+            } else {
+                // ถ้า a น้อยกว่าหรือเท่ากับ 5
+                printf("a น้อยกว่าหรือเท่ากับ 5\n");
+            }</pre>
+
+            <u>การวนลูป (for loop)</u>
+            <pre>for (int i = 0; i < 10; i++) {
+                printf("%d\n", i);  // พิมพ์ค่า i ตั้งแต่ 0 ถึง 9
+            }
+            </pre>
+
+            <u>การประกาศและการเรียกใช้ฟังก์ชัน</u>
+            <pre>// การประกาศฟังก์ชัน
+                int sum(int x, int y) {
+                    return x + y;
+                }
+                
+                // การเรียกใช้ฟังก์ชัน
+                int result = sum(5, 3);
+                printf("ผลรวมคือ %d\n", result);
+                </pre>
+
+                <u>การรับค่า input จากผู้ใช้</u>
+                <pre>int num;
+                    printf("กรุณากรอกตัวเลข: ");
+                    scanf("%d", &num);  // รับค่าตัวเลขจากผู้ใช้และเก็บไว้ในตัวแปร num
+                    printf("คุณกรอก: %d\n", num);
+                    </pre>
+                  
+    </div>
+</div>
+    </div>
+</div>
+
+<header>
+    <nav>
+</nav>
+<h1></h1>
+</header>
+<div class="container">
+    <div class="main-content">
+        <iframe frameborder="0" src="https://onecompiler.com/embed/cpp/?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true"></iframe>
+    </div>
+<div class="sidebar">
+    <h2>คำสั่งเบื้องต้นในการใช้ภาษา C++ ในการดำเนินการทางคณิตศาสตร์พื้นฐาน</h2>
+    <p>#include &lt;iosstream&gt;</p>
+<pre></pre>
+<pre>
+        int main() {
+            int a = 10;
+            int b = 5;
+        
+            int sum = a + b;        // การบวก
+            int difference = a - b; // การลบ
+            int product = a * b;    // การคูณ
+            int quotient = a / b;   // การหาร
+            int remainder = a % b;  // การหารเอาเศษ
+        
+            std::cout << "ผลรวม: " << sum << std::endl;
+            std::cout << "ผลต่าง: " << difference << std::endl;
+            std::cout << "ผลคูณ: " << product << std::endl;
+            std::cout << "ผลหาร: " << quotient << std::endl;
+            std::cout << "เศษจากการหาร: " << remainder << std::endl;
+        
+            return 0;
+        }
+    </pre>
+    <h2>คำสั่งเบื้องต้นในการใช้ภาษา C++ </h2>
+    <u>การใช้ตัวแปรชนิด float ในการคำนวณ</u>
+    <pre>#include &lt;iosstream&gt;
+
+        int main() {
+            float x = 5.5;
+            float y = 2.2;
+        
+            float sum = x + y;        // การบวก
+            float difference = x - y; // การลบ
+            float product = x * y;    // การคูณ
+            float quotient = x / y;   // การหาร
+        
+            std::cout << "ผลรวม: " << sum << std::endl;
+            std::cout << "ผลต่าง: " << difference << std::endl;
+            std::cout << "ผลคูณ: " << product << std::endl;
+            std::cout << "ผลหาร: " << quotient << std::endl;
+        
+            return 0;
+        }
+        </pre>
+        <u>การรับค่าจากผู้ใช้แล้วนำมาคำนวณ</u>
+        <pre>#include &lt;iosstream&gt;
+
+            int main() {
+                int num1, num2;
+                std::cout << "กรุณากรอกตัวเลขตัวแรก: ";
+                std::cin >> num1;
+                std::cout << "กรุณากรอกตัวเลขตัวที่สอง: ";
+                std::cin >> num2;
+            
+                int sum = num1 + num2;        // การบวก
+                int difference = num1 - num2; // การลบ
+                int product = num1 * num2;    // การคูณ
+                int quotient = num1 / num2;   // การหาร
+                int remainder = num1 % num2;  // การหารเอาเศษ
+            
+                std::cout << "ผลรวม: " << sum << std::endl;
+                std::cout << "ผลต่าง: " << difference << std::endl;
+                std::cout << "ผลคูณ: " << product << std::endl;
+                std::cout << "ผลหาร: " << quotient << std::endl;
+                std::cout << "เศษจากการหาร: " << remainder << std::endl;
+            
+                return 0;
+            }
+            </pre>
+            <u>การคำนวณค่าด้วยฟังก์ชัน</u>
+            <pre>#include &lt;iosstream&gt;
+
+                // การประกาศฟังก์ชันสำหรับการคำนวณ
+                int add(int x, int y) {
+                    return x + y;
+                }
+                
+                int subtract(int x, int y) {
+                    return x - y;
+                }
+                
+                int multiply(int x, int y) {
+                    return x * y;
+                }
+                
+                int divide(int x, int y) {
+                    return x / y;
+                }
+                
+                int main() {
+                    int num1, num2;
+                    std::cout << "กรุณากรอกตัวเลขตัวแรก: ";
+                    std::cin >> num1;
+                    std::cout << "กรุณากรอกตัวเลขตัวที่สอง: ";
+                    std::cin >> num2;
+                
+                    std::cout << "ผลรวม: " << add(num1, num2) << std::endl;
+                    std::cout << "ผลต่าง: " << subtract(num1, num2) << std::endl;
+                    std::cout << "ผลคูณ: " << multiply(num1, num2) << std::endl;
+                    std::cout << "ผลหาร: " << divide(num1, num2) << std::endl;
+                
+                    return 0;
+                }
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <header>
+        <nav>
+    </nav>
+    <h1></h1>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <iframe frameborder="0" src="https://onecompiler.com/embed/csharp/?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true"></iframe>
+        </div>
+        <div class="sidebar">
+            <h2>คำสั่งเบื้องต้นในการใช้ภาษา C# ในการดำเนินการทางคณิตศาสตร์พื้นฐาน</h2>
+            <p>using &lt;System&gt;</p>
+        <pre></pre>
+<pre>
+    using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 10;
+        int b = 5;
+
+        int sum = a + b;        // การบวก
+        int difference = a - b; // การลบ
+        int product = a * b;    // การคูณ
+        int quotient = a / b;   // การหาร
+        int remainder = a % b;  // การหารเอาเศษ
+
+        Console.WriteLine("ผลรวม: " + sum);
+        Console.WriteLine("ผลต่าง: " + difference);
+        Console.WriteLine("ผลคูณ: " + product);
+        Console.WriteLine("ผลหาร: " + quotient);
+        Console.WriteLine("เศษจากการหาร: " + remainder);
+    }
+}
+
+</pre>
+<h2>คำสั่งเบื้องต้นในการใช้ภาษา C# </h2>
+    <u>การใช้ตัวแปรชนิด float ในการคำนวณ</u>
+    <pre>using &lt;System&gt;
+        class Program
+        {
+            static void Main()
+            {
+                float x = 5.5f;
+                float y = 2.2f;
+        
+                float sum = x + y;        // การบวก
+                float difference = x - y; // การลบ
+                float product = x * y;    // การคูณ
+                float quotient = x / y;   // การหาร
+        
+                Console.WriteLine("ผลรวม: " + sum);
+                Console.WriteLine("ผลต่าง: " + difference);
+                Console.WriteLine("ผลคูณ: " + product);
+                Console.WriteLine("ผลหาร: " + quotient);
+            }
+        }
+
+    </pre>
+    <u>การรับค่าจากผู้ใช้แล้วนำมาคำนวณ</u>
+    <pre>using &lt;System&gt;
+        class Program
+        {
+            static void Main()
+            {
+                Console.Write("กรุณากรอกตัวเลขตัวแรก: ");
+                int num1 = int.Parse(Console.ReadLine());
+        
+                Console.Write("กรุณากรอกตัวเลขตัวที่สอง: ");
+                int num2 = int.Parse(Console.ReadLine());
+        
+                int sum = num1 + num2;        // การบวก
+                int difference = num1 - num2; // การลบ
+                int product = num1 * num2;    // การคูณ
+                int quotient = num1 / num2;   // การหาร
+                int remainder = num1 % num2;  // การหารเอาเศษ
+        
+                Console.WriteLine("ผลรวม: " + sum);
+                Console.WriteLine("ผลต่าง: " + difference);
+                Console.WriteLine("ผลคูณ: " + product);
+                Console.WriteLine("ผลหาร: " + quotient);
+                Console.WriteLine("เศษจากการหาร: " + remainder);
+            }
+        }
+    </pre>
+    <u>การคำนวณค่าด้วยฟังก์ชัน</u>
+    <pre>using &lt;System&gt;
+        class Program
+        {
+            // การประกาศฟังก์ชันสำหรับการคำนวณ
+            static int Add(int x, int y)
+            {
+                return x + y;
+            }
+        
+            static int Subtract(int x, int y)
+            {
+                return x - y;
+            }
+        
+            static int Multiply(int x, int y)
+            {
+                return x * y;
+            }
+        
+            static int Divide(int x, int y)
+            {
+                return x / y;
+            }
+        
+            static void Main()
+            {
+                Console.Write("กรุณากรอกตัวเลขตัวแรก: ");
+                int num1 = int.Parse(Console.ReadLine());
+        
+                Console.Write("กรุณากรอกตัวเลขตัวที่สอง: ");
+                int num2 = int.Parse(Console.ReadLine());
+        
+                Console.WriteLine("ผลรวม: " + Add(num1, num2));
+                Console.WriteLine("ผลต่าง: " + Subtract(num1, num2));
+                Console.WriteLine("ผลคูณ: " + Multiply(num1, num2));
+                Console.WriteLine("ผลหาร: " + Divide(num1, num2));
+            }
+        }
+    </pre>   
+    <u>การคำนวณด้วย Class และ Object</u>
+    <pre>using &lt;System&gt;
+        class Calculator
+{
+    public int Add(int x, int y)
+    {
+        return x + y;
+    }
+
+    public int Subtract(int x, int y)
+    {
+        return x - y;
+    }
+
+    public int Multiply(int x, int y)
+    {
+        return x * y;
+    }
+
+    public int Divide(int x, int y)
+    {
+        return x / y;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Calculator calc = new Calculator();
+
+        Console.Write("กรุณากรอกตัวเลขตัวแรก: ");
+        int num1 = int.Parse(Console.ReadLine());
+
+        Console.Write("กรุณากรอกตัวเลขตัวที่สอง: ");
+        int num2 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("ผลรวม: " + calc.Add(num1, num2));
+        Console.WriteLine("ผลต่าง: " + calc.Subtract(num1, num2));
+        Console.WriteLine("ผลคูณ: " + calc.Multiply(num1, num2));
+        Console.WriteLine("ผลหาร: " + calc.Divide(num1, num2));
+    }
+}
+    </pre>
+</div>
+</div>
+</div>
+
+<footer>
+<p>&copy; 2024 Matrixgo</p>
+</footer>
+
+</body>
+</html>

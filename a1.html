@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:bisque;
+        }
+
+        header {
+            background-color: #6b4f4f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #8c7b75;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-grow: 1;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffa500;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-bar {
+            width: 0;
+            padding: 10px 20px 10px 40px; /* Adjust padding to accommodate the search icon */
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            transition: width 0.4s ease-in-out;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .search-bar:focus {
+            width: 200px;
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            color:chocolate;
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            left: 10px; /* Position the icon inside the input */
+            z-index: 1;
+        }
+
+        .search-btn i {
+            pointer-events: none;
+        }
+
+        .search-container input::placeholder {
+            color: #999;
+            padding-left: 30px; /* Adjust placeholder padding to align with the icon */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .content {
+            background-color:#fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #6b4f4f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Knowledge</h1>
+        <p>บทความทั้งหมดที่เกี่ยวกับ Matrix</p>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>ความรู้เกี่ยวกับเมทริกซ์ (Matrix)</h2>
+            <p>ความหมายและลักษณะของเมทริกซ์</p>
+            <p></p>
+            <p><u>ความหมายของเมทริกซ์ (Matrix)</u> คือ ตารางสี่เหลี่ยมที่แต่ละช่องบรรจุจำนวนหรือโครงสร้างทางคณิตศาสตร์ที่สามารถนำมาบวกและคูณกับตัวเลขได้ เราสามารถใช้เมทริกซ์แทนระบบสมการเชิงเส้น การแปลงเชิงเส้น และใช้เก็บข้อมูลที่ขึ้นกับตัวแปนต้นสองตัวโดยเราสามารถบวกคูณและแยก เมทริกซ์ออกเป็นผลคูณของเมทริกซ์ได้หลายรูปแบบ</p>
+            <p><u>ลักษณะของเมทริกซ์ (Matrix) </u>คือ การเรียงกันเป็นรูปสี่เหลี่ยมผืนผ้าหรือจัตุรัส กล่าวคือเรียงเป็นแถวในแนวนอน และเรียงเป็นแถวในแนวตั้ง เรามักเขียนเมทริกซ์เป็นตารางที่ไม่มีเส้นแบ่งและเขียนวงเล็บคร่อมตารางไว้ (ทั้งวงเล็บแบบโค้งและวงเล็บแบบเหลี่ยม) แถวในแนวนอนของเมทริกซ์ 
+                เรียกว่า "แถว" แถวในแนวตั้งของเมทริกซ์ เรียกว่า "หลัก" จำนวนแต่ละจำนวนในเมทริกซ์ เรียกว่า "สมาชิก" ซึ่งหากเราจะพูดถึงสมาชิกในเมทริกซ์ ก็จะต้องระบุตำแหน่งให้ถูกต้องด้วย <b>เช่น สมาชิกที่อยู่ในแถวที่ 2 หลักที่ 3 คือเลข 4</b></p>
+                <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 082451.png" alt="Matrix Explanation">
+<p></p>
+<p><u>ชนิดของเมทริกซ์</u></p>
+<ul>
+    <li>เมทริกซ์แถว คือ เมทริกซ์ที่มีเพียง 1 แถว ซึ่งจะมีมิติ = 1 x n    </li>
+    <li>เมทริกซ์หลัก คือ เมทริกซ์ที่มีเพียง 1 หลัก ซึ่งจะมีมิติ = m x1    </li>
+    <li>เมทริกซ์ศูนย์ คือ เมทริกซ์ที่มีสมาชิกทุกตัวเป็น 0    </li>
+    <li>เมทริกซ์จัตุรัส คือ เมทริกซ์ที่มีจำนวนแถวเท่ากับจำนวนหลัก ซึ่งจะมีมิติ = k x k</li>
+    <li>เมทริกซ์เอกลักษณ์ คือ เมทริกซ์จัตุรัสที่มีสมาชิกในนวทแยงมุมหลัก (แนวทแยงมุมจากบนซ้ายไปล่างขวา) เป็นเลข 1 และสมาชิกที่เหลือเป็น 0</li>
+    <li>เมทริกซ์ทแยงมุม คือ เมทริกซ์ที่มีสมาชิกซึ่งไม่อยู่ในแนวทแยงมุมหลักเป็น 0 ทั้งหมด</li>
+    <li>เมทริกซ์สเกลาร์ คือ เมทริกซ์จัตุรัสที่มีสมาชิก (element) ในแนวทแยงมุมหลักมีค่าเท่ากัน และสมาชิกที่เหลือเป็น 0</li>
+    <li> เมทริกซ์สามเหลี่ยมเหลี่ยมบน คือ เมทริกซ์จัตุรัสที่มีสมาชิกที่อยู่ใต้แนวทแยงมุมหลักมีค่าเป็น 0</li>
+    <li> เมทริกซ์สามเหลี่ยมล่าง คือ เมทริกซ์จัตุรัสที่มีสมาชิก (element) อยู่เหนือแนวทแยงมุมหลักมีค่าเป็น 0
+    </li>
+</ul>
+
+                
+
+        </div>
+        <div class="content">
+            <h2>การดำเนินการของเมทริกซ์ (Matrix Operations)</h2>
+            <p>การบวก การลบ และการคูณของเมทริกซ์</p>
+           <li><u>กาารบวกเมทริกซ์ (Matrix Addition)</u></li>
+           <p>เมทริกซ์ที่จะนำมาบวกกันได้นั้น <b>ต้องมีมิติเท่ากัน</b>และบวกจะนำสมาชิกตำแหน่งเดียวกันมาบวกกัน <b>เช่น</b></p>
+         <p><b>ตัวอย่างที่ 1.</b></p>  <img src="c:\Users\User\Pictures\Screenshots\m2.png" alt="Matrix Explanation">
+           <p></p>
+          <p><b>ตัวอย่างที่ 2.</b></p> <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 090857.png" alt="Matrix Explanation">
+        </div>
+        <div class="content">
+          <li><u>กาารลบเมทริกซ์ (Matrix Subtraction)</u></li>
+<p>เมทริกซ์ที่จะนำมาลบกันได้นั้น <b>ต้องมีมิติเท่ากัน</b> และการลบจะนำสมาชิกตำแหน่งเดียวกันมาลบกัน <b>เช่น</b></p>
+     <p><b>ตัวอย่างที่ 1.</b></p>  <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 091751.png" alt="Matrix Explanation">
+     <p></p>
+     <p><b>ตัวอย่างที่ 2.</b></p> <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 092047.png" alt="Matrix Explanation">
+        </div>
+        <div class="content">
+     <li><u>กาารคูณเมทริกซ์ (Matrix Multiplication)</u></li>
+<p>เมทริกซ์ที่จะคูณกันได้ต้องมีหลักเกณฑ์ดังนี้</p>
+<p>1. จำนวนหลักของเมทริกซ์ตัวหน้าต้อง เท่ากับ จำนวนแถวของเมทริกซ์ตัวหลัง</p>
+<p>2. มิติของเมทริกซ์ผลลัพธ์จะเท่ากับ จำนวนแถวของตัวหน้าคูณจำนวนหลักของตัวหลัง <b>เช่น</b></p>
+<p><b>ตัวอย่างที่ 1.</b></p>  <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 093102.png" alt="Matrix Explanation">
+<p></p>
+<img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 093151.png" alt="Matrix Explanation">
+        </div>
+        <div class="content">
+<li><u>กาารคูณเมทริกซ์กับจำนวนจริง (Scalar Multiplication)</u></li>
+<p>การคูณเมทริกซ์ด้วยจำนวนจริงคือ การนำจำนวนจริงค่าหนึ่งคูณกับเมทริกซ์ ซึ่งวิธีการคูณแบบนี้จะสามารถนำจำนวนจริงนั้นเข้าไปคูณกับสมาชิกในตำแหน่งในเมทริกซ์ (ต้องคูณทุกตัวแหน่ง) และเมทริกซ์นั้นจะเป็นกี่มิติก็ได้ <b>เช่น</b></p>
+<img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 094524.png" alt="Matrix Explanation">
+        </div>
+        <div class="content">
+        <li><u>เมทริกซ์สลับเปลี่ยน (transpose of a matrix)</u></li>
+        <p>เมทริกซ์สลับเปลี่ยน (transpose of a matrix) คือ เมทริกซ์ที่เกิดจากการเปลี่ยนแถวเป็นหลัก เปลี่ยนหลักเป็นแถว <b>เช่น</b>แถวที่ 1 ก็เปลี่ยนเป็นหลักที่ 1 ดังตัวอย่าง</p>
+       <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 103551.png" >
+        </div>
+        <div class="content">
+        <li><u>ดีเทอร์มิแนนต์ของเมทริกซ์ (Matrix determinant)</u></li>
+        <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 104815.png">
+        <p>1. ดีเทอร์มิแนนต์ของเมทริกซ์ที่มีขนาด 2x2 </p>
+        <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 105344.png" alt="Matrix Explanation">
+        <p><b>ตัวอย่าง</b></p>
+        <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 110042.png" alt="Matrix Explanation">
+        <p></p>
+        <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 110425.png">
+        <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 110051.png" alt="Matrix Explanation">
+        <p>1. ดีเทอร์มิแนนต์ของเมทริกซ์ที่มีขนาด 3x3 </p>
+        <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 110425.png">
+        <p></p>
+         <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 110615.png">
+        <p><b>ตัวอย่าง</b></p>
+        <img src="c:\Users\User\Pictures\Screenshots\าีั.png">
+        <p></p>
+        <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 110425.png">
+        <p></p>
+        <img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 111338.png">
+    </div>
+    <div class="content">
+        <li><u>เมทริกซ์ผกผัน ( inverse matrix)</u></li>
+        <p>เมทริกซ์ที่จะมาผกผันนั้นจะต้องเป็นเมทริกซ์จัตุรัสเท่านั้น และค่า det ที่ได้จากเมทริกซ์จัตุรัสไม่เท่ากับ 0</p>
+        <p><b>ตัวอย่าง</b></p>
+<p>จงหาเมทริกซ์ผกผันของเมทริกซ์ต่อไปนี้ </p>
+<img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-05 095544.png">
+    </div>
+    <div class="content">
+        <li><u>ระบบสมการเชิงเส้น (System of Linear Equations)</u></li>
+<p>พิจารณาการแก้สมการเมทริกซ์ 2 วิธีดังต่อไปนี้</p>
+<img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-05 100305.png">
+<p><b>ตัวอย่าง</b></p>
+<p>จงหาคำตอบของระบบสมการ</p>
+<img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-05 100430.png">
+<p>x + y = -1</p>
+<p>2x - y = 4</p>
+<img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-03 110425.png">
+<p></p>
+<img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-05 100753.png">
+<p></p>
+<img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-05 101740.png">
+<p></p>
+<img src="c:\Users\User\Pictures\Screenshots\Screenshot 2024-07-05 101833.png">
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    </div>
+
+    <footer>
+        &copy; 2024 Metrixco. All Rights Reserved.
+    </footer>
+
+    
+</body>
+</html>
